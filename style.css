@@ -1,0 +1,121 @@
+body{
+    /*background-image: url("images/cap.png");*/
+background: -webkit-radial-gradient(rgba(255,0,0,0),greenyellow);}
+
+p,h1 {
+    color: maroon;
+    text-align: center;
+    margin-left: 20px;
+}
+
+/************Main Div************/
+
+.main{
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    border-radius:5px;
+
+
+}
+
+/***************Display Area**************/
+#display{
+    margin: 4px;
+    padding: 5px;
+}
+
+/**********List Generate of TODO***********/
+li{
+    padding: 10px 0;
+    list-style-type: none;
+    color: blue;
+    border-bottom: 1px solid #1699fe;
+}
+
+
+/*Style form and buttons*/
+
+input{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    color:#1457ff;
+}
+
+/********Styling on Button***/
+
+input[type="button"] {
+
+    cursor: pointer;
+    border-radius: 15px;
+    width: 300PX;
+    margin-left: 150px;
+    -webkit-box-shadow : 5px 5px #777777; 
+    -moz-box-shadow : 5px 5px #777777; 
+    /*background-color: rgb(85, 217, 255)*/
+    background-color: transparent;
+    display: inline;
+
+
+}
+input[type="button"]:hover{  
+    color: maroon;
+    font-size: 100%;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;  
+}
+
+
+
+
+/********Styling Form Input*******/
+
+input[type="text"]{
+
+    border: none;
+    margin-left: 63px;
+    border: 1px solid #1699fe;
+    border-radius: 20px;
+    width: 450PX;
+    height: 30px;
+    background-color: transparent;
+    text-align: center;
+}
+
+input[type="text"]:hover{
+    font-size: 15px;
+    padding: 6px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+
+/**********Styling on close button********/
+.close {
+    cursor: pointer;
+    float: right;
+}
+.close:hover{
+    width: 7%;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;  
+}
+.close:active{
+    width: 5%;
+}
+
+
+/******Output of the List********/
+
+.showOutput{
+    width: 100%;
+    height: 50%;
+    overflow-y: scroll; 
+}
+.showOutput::-webkit-scrollbar { width: 0 !important }
+.showOutput { overflow: -moz-scrollbars-none; }
